@@ -312,8 +312,13 @@ class EP_API {
 						),
 						'ewp_snowball' => array(
 							'type' => 'snowball',
+<<<<<<< HEAD
 							'language' => apply_filters( 'ep_analyzer_language', 'English' )
 						),
+=======
+							'language' =>  apply_filters( 'ep_analyzer_language', 'English' ),
+							),
+>>>>>>> upstream/master
 						'edge_ngram' => array(
 							'side' => 'front',
 							'max_gram' => 10,
@@ -447,7 +452,11 @@ class EP_API {
 						),
 						'post_status' => array(
 							'type' => 'string',
+<<<<<<< HEAD
+							'index' => 'no',
+=======
 							'index' => 'not_analyzed'
+>>>>>>> upstream/master
 						),
 						'post_name' => array(
 							'type' => 'multi_field',

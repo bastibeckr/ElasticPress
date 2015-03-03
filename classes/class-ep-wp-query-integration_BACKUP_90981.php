@@ -293,7 +293,11 @@ class EP_WP_Query_Integration {
 
 		if ( ! $instance ) {
 			$instance = new self();
+<<<<<<< HEAD
 			add_action( 'init', array($instance, 'setup'), 11 );
+=======
+			add_action( 'init', array( $instance, 'setup' ) );
+>>>>>>> upstream/master
 		}
 
 		return $instance;

@@ -100,7 +100,7 @@ class EP_WP_Query_Integration {
 			restore_current_blog();
 
 			switch_to_blog( $post->site_id );
-
+			
 			remove_action( 'the_post', array( $this, 'action_the_post' ), 10, 1 );
 			setup_postdata( $post );
 			add_action( 'the_post', array( $this, 'action_the_post' ), 10, 1 );
@@ -293,7 +293,7 @@ class EP_WP_Query_Integration {
 
 		if ( ! $instance ) {
 			$instance = new self();
-			add_action( 'init', array($instance, 'setup'), 11 );
+			add_action( 'init', array( $instance, 'setup' ) );
 		}
 
 		return $instance;
